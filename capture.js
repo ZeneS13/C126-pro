@@ -37,7 +37,7 @@ export default class Capture extends React.Component{
                 type:filetype}
           }
           data1.append(fileToUp)
-          fetch("https://c18f-110-226-131-22.ngrok.io//Predict-alphabet",{method:'POST',body:data1, headers:{"content-type":"multipart/form-data"}}).then((response)=>{
+          fetch("http://05f2-103-157-220-226.ngrok.io/Predict-alphabet",{method:'POST',body:data1, headers:{"content-type":"multipart/form-data"}}).then((response)=>{
           response.json()}).then((result)=>{console.log("The result is "+result)}).catch((error)=>{console.log("err"+error)})
         }
         catch(e){
